@@ -4,6 +4,9 @@
 using namespace std;
 
 double neuron:get_val(){
+    if(last.size()==0){
+        return val;
+    }
     val=0;
     for(int i=0;i<last.size();i++){
         val+=last[i]->get_val();
