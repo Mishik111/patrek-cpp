@@ -2,33 +2,33 @@
 
 using namespace std;
 
-void nn:add_layer(int neuron_count){
-    layers.push_back(layer());
-    layers.back().create_neurons(neuron_count);
+void N::add_l(int c){
+    ls.push_back(L());
+    ls.back().cr_n(c);
 }
 
-void nn:connect_layers(double weight){
-    for(int i=1;i<layers.size();i++){
-        layers[i].connect(&layers[i-1], weight);
+void N::con_l(double w){
+    for(int i=1;i<ls.size();i++){
+        ls[i].con(&ls[i-1], w);
     }
 }
 
-void nn:forward(vector<double> inputs){
-    for(int i=0;i<inputs.size() && i<layers[0].neurons.size();i++){
-        layers[0].neurons[i].val=inputs[i];
+void N::fwd(vector<double> in){
+    for(int i=0;i<in.size() && i<ls[0].ns.size();i++){
+        ls[0].ns[i].v=in[i];
     }
-    for(int i=1;i<layers.size();i++){
-        for(int j=0;j<layers[i].neurons.size();j++){
-            layers[i].neurons[j].get_val();
+    for(int i=1;i<ls.size();i++){
+        for(int j=0;j<ls[i].ns.size();j++){
+            ls[i].ns[j].gv();
         }
     }
 }
 
-vector<double> nn:get_val(){
-    vector<double> output;
-    layer& last_layer=layers.back();
-    for(int i=0;i<last_layer.neurons.size();i++){
-        output.push_back(last_layer.neurons[i].val);
+vector<double> N::gv(){
+    vector<double> o;
+    L& l=ls.back();
+    for(int i=0;i<l.ns.size();i++){
+        o.push_back(l.ns[i].v);
     }
-    return output;
+    return o;
 }

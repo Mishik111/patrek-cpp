@@ -1,5 +1,5 @@
-#ifndef LAYER_H
-#define LAYER_H
+#ifndef L_H
+#define L_H
 
 #include <vector>
 #include "neuron.h"
@@ -7,12 +7,12 @@
 
 using namespace std;
 
-class layer {
+class L {
 public:
-  vector<neuron> neurons;
-  vector<line> lines;
+  vector<Nr> ns;
+  vector<Ln> ls;
   
-  void create_neurons(int count);
-  void connect(layer* prev, double weight);
+  void cr_n(int c);
+  void con(L* p, double w);
 };
 #endif

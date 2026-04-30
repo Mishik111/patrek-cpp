@@ -1,17 +1,17 @@
-#ifndef NEURON_H
-#define NEURON_H
+#ifndef NR_H
+#define NR_H
 
 #include <vector>
 
-class line;
+class Ln;
 using namespace std;
 
-class neuron {
+class Nr {
 public:
-  double val;
-  vector<line*> last;
+  double v;
+  vector<Ln*> lst;
 
-  double get_val();
-  void add_line(line*);
+  double gv();
+  void add_l(Ln*);
 };
 #endif

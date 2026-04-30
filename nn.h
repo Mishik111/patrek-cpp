@@ -1,18 +1,18 @@
-#ifndef NN_H
-#define NN_H
+#ifndef N_H
+#define N_H
 
 #include <vector>
 #include "layer.h"
 
 using namespace std;
 
-class nn {
+class N {
 public:
-  vector<layer> layers;
+  vector<L> ls;
   
-  void add_layer(int neuron_count);
-  void connect_layers(double weight);
-  void forward(vector<double> inputs);
-  vector<double> get_val();
+  void add_l(int c);
+  void con_l(double w);
+  void fwd(vector<double> in);
+  vector<double> gv();
 };
 #endif

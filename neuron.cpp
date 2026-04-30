@@ -3,17 +3,17 @@
 
 using namespace std;
 
-double neuron:get_val(){
-    if(last.size()==0){
-        return val;
+double Nr::gv(){
+    if(lst.size()==0){
+        return v;
     }
-    val=0;
-    for(int i=0;i<last.size();i++){
-        val+=last[i]->get_val();
+    v=0;
+    for(int i=0;i<lst.size();i++){
+        v+=lst[i]->gv();
     }
-    return val;
+    return v;
 }
 
-void neuron:add_line(line* l){
-    last.push_back(l);
+void Nr::add_l(Ln* x){
+    lst.push_back(x);
 }

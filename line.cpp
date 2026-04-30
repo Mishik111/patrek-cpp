@@ -3,13 +3,13 @@
 
 using namespace std;
 
-double line:get_val(){
-    return n1->get_val() * weight;
+double Ln::gv(){
+    return a->gv() * w;
 }
 
-void line:set_neurons(neuron* a, neuron* b, double w){
-    n1 = a;
-    n2 = b;
-    weight = w;
-    b->add_line(this);
+void Ln::set_n(Nr* x, Nr* y, double w){
+    a = x;
+    b = y;
+    this->w = w;
+    y->add_l(this);
 }
