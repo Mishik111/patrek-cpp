@@ -24,7 +24,7 @@ void nn:forward(vector<double> inputs){
     }
 }
 
-vector<double> nn:get_output(){
+vector<double> nn:get_val(){
     vector<double> output;
     layer& last_layer=layers.back();
     for(int i=0;i<last_layer.neurons.size();i++){

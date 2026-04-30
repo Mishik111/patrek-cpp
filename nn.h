@@ -13,6 +13,6 @@ public:
   void add_layer(int neuron_count);
   void connect_layers(double weight);
   void forward(vector<double> inputs);
-  vector<double> get_output();
+  vector<double> get_val();
 };
 #endif
