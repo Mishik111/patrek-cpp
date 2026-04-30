@@ -1,12 +1,15 @@
-#include "neuron.h"
 #include "line.h"
+#include "neuron.h"
 
 using namespace std;
 
-double Line:get_val(){
-    return val;
+double line:get_val(){
+    return n1->get_val() * weight;
 }
 
-void Line:set_neurons(vector<Line> l){
-    last=l;
+void line:set_neurons(neuron* a, neuron* b, double w){
+    n1 = a;
+    n2 = b;
+    weight = w;
+    b->add_line(this);
 }

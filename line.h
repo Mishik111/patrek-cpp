@@ -1,14 +1,16 @@
 #ifndef LINE_H
 #define LINE_H
 
-#include "neuron.h"
+class neuron;
 using namespace std;
 
-class Line {
+class line {
 public:
-  neuron n1, n2;
+  neuron* n1;
+  neuron* n2;
+  double weight;
   
-  void set_neurons(neuron, neuron);
+  void set_neurons(neuron*, neuron*, double);
   double get_val();
 };
 #endif

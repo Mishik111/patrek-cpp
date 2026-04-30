@@ -2,16 +2,16 @@
 #define NEURON_H
 
 #include <vector>
-#include "line.h"
 
+class line;
 using namespace std;
 
-class Neuron {
+class neuron {
 public:
   double val;
-  vector<Line> last;
+  vector<line*> last;
 
   double get_val();
-  void set_lines(vector<Line>);
+  void add_line(line*);
 };
 #endif
