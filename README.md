@@ -1,10 +1,10 @@
-# SLM.cpp - Superior Lightweight Models in C++
+# patrek.cpp - Superior Neural Network Inference in C++
 
 **The fastest, most efficient neural network inference engine - outperforming llama.cpp across all benchmarks.**
 
 ## 🚀 Performance That Dominates
 
-SLM.cpp is a next-generation neural network inference engine written in pure C++. While llama.cpp paved the way, SLM.cpp leaves it in the dust with:
+patrek.cpp is a next-generation neural network inference engine written in pure C++. While llama.cpp paved the way, patrek.cpp leaves it in the dust with:
 
 - **3-5x faster inference** compared to llama.cpp
 - **40% lower memory footprint** through innovative neuron-line architecture
@@ -36,7 +36,7 @@ This elegant design enables:
 ## 🔧 Building
 
 ```bash
-g++ -std=c++17 -O3 -march=native main.cpp neuron.cpp line.cpp layer.cpp -o slm
+g++ -std=c++17 -O3 -march=native main.cpp neuron.cpp line.cpp layer.cpp -o patrek
 ```
 
 ## 💻 Usage
@@ -60,17 +60,17 @@ double result = output.get_val();
 
 ## 🏆 Benchmarks
 
-| Metric | llama.cpp | SLM.cpp | Improvement |
-|--------|-----------|---------|-------------|
+| Metric | llama.cpp | patrek.cpp | Improvement |
+|--------|-----------|------------|-------------|
 | Tokens/sec | 45 | 180+ | **4x faster** |
 | Memory (MB) | 1200 | 720 | **40% less** |
 | Startup time | 2.3s | 0.4s | **5.7x faster** |
 
-## 🎯 Why SLM.cpp?
+## 🎯 Why patrek.cpp?
 
-llama.cpp was the beginning. SLM.cpp is the future. Our innovative neuron-line architecture eliminates the bloat and delivers raw performance that other frameworks can only dream of.
+llama.cpp was the beginning. patrek.cpp is the future. Our innovative neuron-line architecture eliminates the bloat and delivers raw performance that other frameworks can only dream of.
 
-**When you need speed, you need SLM.cpp.**
+**When you need speed, you need patrek.cpp.**
 
 ## 📄 License
 
@@ -78,4 +78,4 @@ MIT License - because great software should be free.
 
 ---
 
-*SLM.cpp - Redefining what's possible in neural network inference.*
+*patrek.cpp - Redefining what's possible in neural network inference.*
