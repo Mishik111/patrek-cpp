@@ -7,6 +7,7 @@ void L::cr_n(int c){
 }
 
 void L::con(L* p, double w){
+    ls.reserve(ns.size() * p->ns.size());
     for(int i=0;i<ns.size();i++){
         for(int j=0;j<p->ns.size();j++){
             ls.push_back(Ln());

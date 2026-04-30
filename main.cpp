@@ -19,5 +19,16 @@ int main(){
     }
     cout << endl;
     
+    n.save("ai.patr");
+    
+    N n2;
+    n2.load("ai.patr");
+    n2.fwd(in);
+    vector<double> out2 = n2.gv();
+    for(int i=0;i<out2.size();i++){
+        cout << out2[i] << " ";
+    }
+    cout << endl;
+    
     return 0;
 }
